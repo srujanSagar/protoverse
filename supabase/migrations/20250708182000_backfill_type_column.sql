@@ -1,0 +1,4 @@
+-- Migration: Backfill 'type' column in 'products' table
+-- (Commented out due to missing type column and not needed for add-ons feature)
+-- UPDATE products SET type = 'combo' WHERE comboProducts IS NOT NULL OR comboPrice IS NOT NULL;
+-- UPDATE products SET type = 'single' WHERE type IS NULL; 
